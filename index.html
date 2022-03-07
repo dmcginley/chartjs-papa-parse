@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
 
+    <!-- Papa parse JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.1/papaparse.min.js"
+      integrity="sha384-3UqfbTnADMqh/U3Nnc2YemCb4NU2tvfy1QWQa71aD9jM8J22WQov29gHPWobkC/p"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- chart.js script added integrity and crossorigin for SRI Hash using https://www.srihash.org/  -->
     <script
       src="https://cdn.jsdelivr.net/npm/chart.js"
@@ -25,11 +32,36 @@
       </div> -->
       <div class="chart-box">
         <h2>CSV test data</h2>
-        <canvas id="testChart"></canvas>
+        <canvas id="myChart"></canvas>
       </div>
     </div>
+    <div class="upload-container">
+      <h2 id="introHeader">Upload your CSV File</h2>
+
+      <fieldset>
+        <input
+          class="file-upload-btn"
+          type="file"
+          id="txtFileUpload"
+          name="File Upload"
+          accept=".csv"
+        />
+        <button id="confirm-read-csv">Upload CSV</button>
+      </fieldset>
+    </div>
+    <!-- <textarea name="" id="csvData" cols="30" rows="10">
+cost,profit,sell
+1,2,3
+2,4,3
+5,5,4
+4,6,1
+
+7,8,4
+</textarea
+    > -->
     <!-- script -->
 
-    <script src="assets/js/test.js"></script>
+    <!-- <script src="assets/js/test.js"></script> -->
+    <script src="assets/js/d3csv.js"></script>
   </body>
 </html>

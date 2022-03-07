@@ -26,21 +26,27 @@ h2 {
 }
 
 button {
-  padding: 0.4em 0.8em;
+  padding: 0.6em 1.2em;
   margin: 10px;
-  color: #666666;
-  background-color: transparent;
+  color: #111111;
+  background-color: rgb(115, 192, 255);
   border-radius: 3px;
   border: #666666 solid 1.4px;
 }
 
 button:hover {
-  color: #1d1d1d;
-  background-color: #e4e4e4;
+  background-color: rgb(77, 162, 231);
 }
 .btn1 {
   background-color: hsla(210, 57%, 52%, 0.5);
 }
 .btn2 {
   background-color: rgba(163, 71, 186, 0.5);
+}
+fieldset {
+  background-color: #f1f1f1;
+}
+.file-upload-btn {
+  font-size: 1rem;
+  padding: 1em;
 }
