@@ -11,3 +11,7 @@ testing chartjs and csv for my new project
 ### Chart.js
 
 - https://www.chartjs.org/docs/latest/
+
+## Live site
+
+https://dmcginley.github.io/chartjs-papa-parse/
